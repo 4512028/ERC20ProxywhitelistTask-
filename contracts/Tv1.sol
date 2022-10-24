@@ -26,10 +26,11 @@ contract Tv1   {
 
    
      function initialize() external{ 
-          balanceOf[msg.sender] = totalSupply; 
+         
           name = "DApp Token";
           symbol = "DAPP";
           totalSupply = 1000000000000000000000000; // 1 million tokens
+          balanceOf[msg.sender] = totalSupply; 
           decimals = 18;
           _owner = _msgSender();
     
